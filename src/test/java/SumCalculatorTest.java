@@ -1,13 +1,14 @@
 import org.example.SumCalculator;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
 class SumCalculatorTest {
-    private static SumCalculator calc;
-    @BeforeAll
-    static void beforeAll() {
+    private SumCalculator calc;
+    @BeforeEach
+    void beforeEach() {
         calc = new SumCalculator();
     }
     @Test
